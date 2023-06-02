@@ -1,6 +1,7 @@
 import Footer from "../Footer/Footer";
 import ProfileData from "../ProfileData/ProfileData";
 import Square from "../Square/Square.d";
+import { socialMedia, color, hoverColor } from "./socialMedia";
 import "./Main.scss";
 
 export default function Main() {
@@ -9,17 +10,9 @@ export default function Main() {
       <ProfileData />
 
       <div className="wrapper-flex">
-        <Square link="https://www.linkedin.com/in/silv4b/" icon="linkedin" color="#f5f5f5" hoverColor="#202024" />
-        <Square link="https://instagram.com/silv4b/" icon="instagram" color="#f5f5f5" hoverColor="#202024" />
-        <Square link="https://www.figma.com/@silv4b/" icon="figma" color="#f5f5f5" hoverColor="#202024" />
-        <Square link="https://github.com/silv4b/" icon="github" color="#f5f5f5" hoverColor="#202024" />
-        <Square
-          link="https://marketplace.visualstudio.com/publishers/silv4b/"
-          icon="visual-studio"
-          color="#f5f5f5"
-          hoverColor="#202024"
-        />
-        <Square link="mailto:brunoxbkd@gmail.com" icon="gmail" color="#f5f5f5" hoverColor="#202024" />
+        {socialMedia.map((social) => {
+          return <Square link={social.link} icon={social.icon} color={color} hoverColor={hoverColor} />;
+        })}
       </div>
 
       <Footer />

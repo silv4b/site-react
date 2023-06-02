@@ -12,11 +12,11 @@ interface ISquare {
 export default function Square({ link, icon, animation, color, hoverColor }: Partial<ISquare>) {
   const [firstColor, setFirstColor] = useState(color);
 
-  const mouseIn = () => {
+  const onMouseOver = () => {
     setFirstColor(hoverColor);
   };
 
-  const mouseOut = () => {
+  const onMouseLeave = () => {
     setFirstColor(color);
   };
 
@@ -25,8 +25,8 @@ export default function Square({ link, icon, animation, color, hoverColor }: Par
       <div
         className="container"
         onClick={() => window.open(link, "_blank")}
-        onMouseOver={() => mouseIn()}
-        onMouseLeave={() => mouseOut()}
+        onMouseOver={() => onMouseOver()}
+        onMouseLeave={() => onMouseLeave()}
       >
         <box-icon id="boxIcon" type="logo" name={icon} animation={animation} color={firstColor} />
       </div>
