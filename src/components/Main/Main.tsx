@@ -1,10 +1,13 @@
-import Square from "../Square/Square";
+import Footer from "../Footer/Footer";
+import ProfileData from "../ProfileData/ProfileData";
+import Square from "../Square/Square.d";
 import "./Main.scss";
 
 export default function Main() {
   return (
     <>
-      <p>Bruno Silva | @silv4b</p>
+      <ProfileData />
+
       <div className="wrapper-flex">
         <Square link="https://www.linkedin.com/in/silv4b/" icon="linkedin" color="#f5f5f5" hoverColor="#202024" />
         <Square link="https://instagram.com/silv4b/" icon="instagram" color="#f5f5f5" hoverColor="#202024" />
@@ -18,6 +21,8 @@ export default function Main() {
         />
         <Square link="mailto:brunoxbkd@gmail.com" icon="gmail" color="#f5f5f5" hoverColor="#202024" />
       </div>
+
+      <Footer />
     </>
   );
 }
