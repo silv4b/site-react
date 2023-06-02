@@ -1,0 +1,18 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border-style: solid;
+  transition: 0.2s ease-in-out;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
