@@ -22,7 +22,15 @@ export default function Modal({ isOpen, setOpen, title, description }: Partial<I
 
   if (isOpen) {
     return (
-      <div className={style.background}>
+      <>
+        {/* dark overlay */}
+        <div
+          onClick={() => {
+            handleClick();
+          }}
+          className={style.background}
+        ></div>
+        {/* modal itself */}
         <div className={style.modal}>
           <h3>{title}</h3>
           <p>{description}</p>
@@ -34,9 +42,11 @@ export default function Modal({ isOpen, setOpen, title, description }: Partial<I
             Fechar
           </button>
         </div>
-      </div>
+      </>
     );
   } else {
     <></>;
   }
 }
+
+// fazer o modal carregar na frente do overlay e o click do overlay fechar o modal

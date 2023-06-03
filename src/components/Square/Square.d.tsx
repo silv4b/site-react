@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Square.scss";
+import style from "./Square.module.scss";
 
 interface ISquare {
   link: string;
@@ -23,7 +23,7 @@ export default function Square({ link, icon, animation, color, hoverColor }: Par
   return (
     <>
       <div
-        className="container"
+        className={style.container}
         onClick={() => window.open(link, "_blank")}
         onMouseOver={() => onMouseOver()}
         onMouseLeave={() => onMouseLeave()}
