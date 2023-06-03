@@ -2,7 +2,7 @@ import style from "./Modal.module.scss";
 
 interface ISpotify {
   link: string;
-  image?: string;
+  image: string;
   description: string;
   title: string;
 }
@@ -23,14 +23,12 @@ export default function Modal({ isOpen, setOpen, title, description }: Partial<I
   if (isOpen) {
     return (
       <>
-        {/* dark overlay */}
         <div
           onClick={() => {
             handleClick();
           }}
           className={style.background}
         ></div>
-        {/* modal itself */}
         <div className={style.modal}>
           <h3>{title}</h3>
           <p>{description}</p>
@@ -45,7 +43,7 @@ export default function Modal({ isOpen, setOpen, title, description }: Partial<I
       </>
     );
   } else {
-    <></>;
+    return null;
   }
 }
 
