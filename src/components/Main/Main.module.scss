@@ -1,11 +1,11 @@
-.wrapper-grid {
+.wrapper_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
 
-.wrapper-flex {
+.wrapper_flex {
   display: flex;
   flex-wrap: wrap;
   width: 420px;
