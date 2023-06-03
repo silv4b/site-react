@@ -1,10 +1,10 @@
-import "./ProfileData.scss";
+import style from "./ProfileData.module.scss";
 
 export default function ProfileData() {
   return (
     <>
-      <div className="profile-container">
-        <div className="profile">
+      <div className={style.profile_container}>
+        <div className={style.profile}>
           <img src="https://avatars.githubusercontent.com/u/17997794?v=4" />
         </div>
       </div>
