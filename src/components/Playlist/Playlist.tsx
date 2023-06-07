@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import { color, hoverColor } from "../Main/socialMedia";
+import style from "./Playlist.module.scss";
 
 export default function Playlists() {
   const [open, setOpen] = useState<boolean>(false);
@@ -17,6 +18,7 @@ export default function Playlists() {
   return (
     <>
       <button
+        className={style.btn_playlist}
         onClick={() => {
           setOpen(!open);
         }}
