@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+// https://www.copycat.dev/blog/styled-components-react/
+
 export default createGlobalStyle`
   :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -7,6 +9,7 @@ export default createGlobalStyle`
     font-weight: 400;
     color-scheme: light dark;
   }
+
   #root {
     max-width: 1280px;
     margin: 0 auto;

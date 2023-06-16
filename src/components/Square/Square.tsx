@@ -33,3 +33,5 @@ export default function Square({ link, icon, animation, color, hoverColor }: Par
     </>
   );
 }
+
+// TO-DO: Testar o uso de styled-icons -> https://github.com/styled-icons/styled-icons
