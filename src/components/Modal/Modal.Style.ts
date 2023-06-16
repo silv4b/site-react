@@ -1,11 +1,11 @@
-.background {
+import styled from "styled-components";
+
+const Background = styled.div`
   transition: 0.9s ease-in-out;
   position: fixed;
   z-index: 999999;
   top: 0;
   left: 0;
-  // width: 100vw;
-  // height: 100vh;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -13,9 +13,10 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
-}
-.modal {
-  position: absolute !important;
+`;
+
+const ModalContent = styled.div`
+  position: absolute;
   padding: 2rem;
   color: rgb(255, 255, 255);
   background: rgb(28, 28, 28);
@@ -24,37 +25,36 @@
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
   overflow: auto;
   transition: 0.9s ease-in-out;
-  position: absolute;
   left: 50%;
-  top: 50%;
+  top: 456px;
   transform: translate(-50%, -50%);
   z-index: 11 !important;
-}
 
-.modal > :first-child {
-  font-size: 2rem;
-}
+  &:first-child{
+    font-size: 2rem;
+  }
+`;
 
-.pl_container {
+const PlaylistContainer = styled.div`
   display: flex;
   margin-bottom: 1rem;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-}
 
-.pl_container:hover {
-  transform: scale(1.05);
-}
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
 
-.pl_image {
+const PlaylisImage = styled.img`
   width: 150px;
   height: 150px;
   border-style: none;
   transition: 0.2s ease-in-out;
   border-radius: 8px 0 0 8px;
-}
+`;
 
-.pl_description {
+const PlaylisDescription = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #171717;
@@ -63,35 +63,19 @@
   padding-right: 1rem;
   width: 320px;
   height: 150px;
-}
 
-p {
-  margin-top: 0;
-}
+  p {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 
-.pl_description > :first-child {
-  text-align: left;
-  margin-top: 20px;
-  font-size: 1.1rem;
-}
+  &:nth-child(2) {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+`;
 
-.pl_description > :nth-child(2) {
-  text-align: left;
-  font-size: 0.9rem;
-}
 
-button {
-  border: none;
-  width: 380px;
-  background-color: #202024;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 1rem;
-  transition: 0.2s ease-in-out;
-}
 
-button:hover {
-  box-shadow: 0px 0px 67px -11px rgba(0, 0, 0, 0.75);
-  transform: scale(1.2);
-  background-color: #f5f5f5;
-}
+
+export {Background, ModalContent, PlaylistContainer, PlaylisImage, PlaylisDescription};
