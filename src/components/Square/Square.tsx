@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./Square.module.scss";
+import { Container } from "./Square.Style";
 
 interface ISquare {
   link: string;
@@ -22,14 +22,13 @@ export default function Square({ link, icon, animation, color, hoverColor }: Par
 
   return (
     <>
-      <div
-        className={style.container}
+      <Container
         onClick={() => window.open(link, "_blank")}
         onMouseOver={() => onMouseOver()}
         onMouseLeave={() => onMouseLeave()}
       >
         <box-icon id="boxIcon" type="logo" name={icon} animation={animation} color={firstColor} />
-      </div>
+      </Container>
     </>
   );
 }

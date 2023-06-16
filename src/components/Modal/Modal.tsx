@@ -1,6 +1,6 @@
 import { useCallback, useEffect } from "react";
-import style from "./Modal.module.scss";
 import { spotifyPlaylists } from "../Playlist/SpotifyPlaylists";
+import { Background, ModalContent, PlaylistContainer, PlaylisImage, PlaylisDescription } from "./Modal.Style";
 
 interface KeyboardEvent {
   key: string;
@@ -37,31 +37,28 @@ export default function Modal({ isOpen, setOpen, title }: Partial<IModal>) {
   if (isOpen) {
     return (
       <>
-        <div
+        <Background
           onClick={() => {
             handleClick();
           }}
-          className={style.background}
-        ></div>
-        <div className={style.modal}>
+        ></Background>
+        <ModalContent>
           <p>{title}</p>
 
           {spotifyPlaylists.map((pl) => {
             return (
               <>
-                <div onClick={() => window.open(pl.link, "_blank")} className={style.pl_container} key={pl.id}>
-                  <div>
-                    <img className={style.pl_image} src={pl.image} alt="" />
-                  </div>
-                  <div className={style.pl_description}>
+                <PlaylistContainer onClick={() => window.open(pl.link, "_blank")} key={pl.id}>
+                  <PlaylisImage src={pl.image} alt="" />
+                  <PlaylisDescription>
                     <p>{pl.nome}</p>
                     <p>{pl.desc}</p>
-                  </div>
-                </div>
+                  </PlaylisDescription>
+                </PlaylistContainer>
               </>
             );
           })}
-        </div>
+        </ModalContent>
       </>
     );
   } else {

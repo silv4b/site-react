@@ -26,6 +26,16 @@ export default createGlobalStyle`
     min-height: 100vh;
   }
 
+  p {
+    margin-top: 0;
+  }
+
+  box-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+
   ::-webkit-scrollbar {
     width: 7px;
   }

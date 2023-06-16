@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import { color, hoverColor } from "../Main/socialMedia";
-// import style from "./Playlist.module.scss";
 import { PlaylistButton } from "./Playlist.Style";
 
 export default function Playlists() {
