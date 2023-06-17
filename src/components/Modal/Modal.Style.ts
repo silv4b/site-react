@@ -33,6 +33,10 @@ const ModalContent = styled.div`
   &:first-child{
     font-size: 2rem;
   }
+
+  @media screen and (max-width: 600) {
+    width: 50%;
+  }
 `;
 
 const PlaylistContainer = styled.div`
@@ -44,6 +48,10 @@ const PlaylistContainer = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media screen and (max-width: 600px) {
+    justify-content: space-around;
+  }
 `;
 
 const PlaylisImage = styled.img`
@@ -52,6 +60,10 @@ const PlaylisImage = styled.img`
   border-style: none;
   transition: 0.2s ease-in-out;
   border-radius: 8px 0 0 8px;
+
+  @media screen and (max-width: 600px) {
+    border-radius: 8px;
+  }
 `;
 
 const PlaylisDescription = styled.div`
@@ -72,6 +84,10 @@ const PlaylisDescription = styled.div`
   &:nth-child(2) {
     text-align: left;
     font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 `;
 
