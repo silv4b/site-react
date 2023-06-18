@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 // https://www.copycat.dev/blog/styled-components-react/
 
@@ -15,10 +15,11 @@ export default createGlobalStyle`
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    overflow-x: hidden ;
   }
 
   body {
-    background: #111114;
+    background: ${(props) => props.theme.colors.background};
     margin: 0;
     display: flex;
     place-items: center;

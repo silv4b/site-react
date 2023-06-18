@@ -4,7 +4,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #202024;
+  background-color: ${props => props.theme.colors.primary};
   height: 100px;
   width: 100px;
   border-radius: 0.5rem;

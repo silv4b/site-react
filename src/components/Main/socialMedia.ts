@@ -1,6 +1,12 @@
-const color = "#f5f5f5";
+// melhorar essa lógica depois
 
-const hoverColor = "#202024";
+// dark
+const DarkColor = "#F5F5F5";
+const DarkHoverColor = "#202024";
+
+// light
+const lightColor = "#202024";
+const lightHoverColor = "#F5F5F5";
 
 const socialMedia = [
   {
@@ -32,7 +38,7 @@ const socialMedia = [
     id: 6,
     link: "mailto:brunoxbkd@gmail.com",
     icon: "gmail",
-  }
+  },
 ];
 
-export {socialMedia, color, hoverColor};
+export { socialMedia, DarkColor, DarkHoverColor, lightColor, lightHoverColor };

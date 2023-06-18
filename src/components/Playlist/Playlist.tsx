@@ -1,18 +1,18 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
-import { color, hoverColor } from "../Main/socialMedia";
+import { DarkColor, DarkHoverColor } from "../Main/socialMedia";
 import { PlaylistButton } from "./Playlist.Style";
 
 export default function Playlists() {
   const [open, setOpen] = useState<boolean>(false);
-  const [firstColor, setFirstColor] = useState(color);
+  const [firstColor, setFirstColor] = useState(DarkColor);
 
   const onMouseOver = () => {
-    setFirstColor(hoverColor);
+    setFirstColor(DarkHoverColor);
   };
 
   const onMouseLeave = () => {
-    setFirstColor(color);
+    setFirstColor(DarkColor);
   };
 
   return (
