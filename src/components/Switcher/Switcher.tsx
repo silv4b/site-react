@@ -27,7 +27,7 @@ const Switcher: React.FC<IToggleTheme> = ({ toggleTheme }) => {
         uncheckedIcon={false}
         handleDiameter={20}
         offColor={colors.secondary}
-        onColor={colors.primary}
+        onColor={colors.secondary}
         uncheckedHandleIcon={<MoonIcon />}
         checkedHandleIcon={<SunIcon />}
       />

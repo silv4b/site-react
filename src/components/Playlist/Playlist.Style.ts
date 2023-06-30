@@ -4,7 +4,7 @@ const PlaylistButton = styled.button`
   border: none;
   width: 380px;
   height: 50px;
-  background-color: #202024;
+  background-color: ${(props) => props.theme.colors.primary};
   border-radius: 8px;
   cursor: pointer;
   margin: 1rem;
@@ -13,10 +13,10 @@ const PlaylistButton = styled.button`
   &:hover {
     box-shadow: 0px 0px 67px -11px rgba(0, 0, 0, 0.75);
     transform: scale(1.2);
-    background-color: #f5f5f5;
+    background-color: ${(props) => props.theme.colors.secondary};
   }
 
-  &:first-child{
+  &:first-child {
     width: 40px;
     height: 40px;
   }
@@ -27,4 +27,4 @@ const PlaylistButton = styled.button`
   }
 `;
 
-export {PlaylistButton};
+export { PlaylistButton };

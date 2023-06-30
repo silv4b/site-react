@@ -1,18 +1,20 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Modal from "../Modal/Modal";
 import { DarkColor, DarkHoverColor } from "../Main/socialMedia";
 import { PlaylistButton } from "./Playlist.Style";
+import { ThemeContext } from "styled-components";
 
 export default function Playlists() {
   const [open, setOpen] = useState<boolean>(false);
   const [firstColor, setFirstColor] = useState(DarkColor);
+  const { title } = useContext(ThemeContext);
 
   const onMouseOver = () => {
-    setFirstColor(DarkHoverColor);
+    setFirstColor(title === "light" ? DarkColor : DarkHoverColor);
   };
 
   const onMouseLeave = () => {
-    setFirstColor(DarkColor);
+    setFirstColor(title === "light" ? DarkHoverColor : DarkColor);
   };
 
   return (
