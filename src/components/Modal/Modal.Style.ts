@@ -30,7 +30,7 @@ const ModalContent = styled.div`
   transform: translate(-50%, -50%);
   z-index: 11 !important;
 
-  &:first-child{
+  &:first-child {
     font-size: 2rem;
   }
 
@@ -91,7 +91,10 @@ const PlaylisDescription = styled.div`
   }
 `;
 
-
-
-
-export {Background, ModalContent, PlaylistContainer, PlaylisImage, PlaylisDescription};
+export {
+  Background,
+  ModalContent,
+  PlaylistContainer,
+  PlaylisImage,
+  PlaylisDescription,
+};

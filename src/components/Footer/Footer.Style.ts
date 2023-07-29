@@ -16,4 +16,4 @@ const Link = styled.a`
   }
 `;
 
-export {FooterContent, Paragraph, Link};
+export { FooterContent, Paragraph, Link };

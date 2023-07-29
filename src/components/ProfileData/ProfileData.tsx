@@ -1,4 +1,10 @@
-import { ProfileContainer, Profile, ImageProfile, HeaderTwo, Paragraph } from "../ProfileData/ProfileData.Style";
+import {
+  ProfileContainer,
+  Profile,
+  ImageProfile,
+  HeaderTwo,
+  Paragraph,
+} from "../ProfileData/ProfileData.Style";
 
 export default function ProfileData() {
   return (
@@ -11,7 +17,10 @@ export default function ProfileData() {
       </ProfileContainer>
 
       <HeaderTwo>Bruno Silva | @silv4b</HeaderTwo>
-      <Paragraph color="#808080"> Designer de Interfaces e Desenvolvedor</Paragraph>
+      <Paragraph color="#808080">
+        {" "}
+        Designer de Interfaces e Desenvolvedor
+      </Paragraph>
     </>
   );
 }

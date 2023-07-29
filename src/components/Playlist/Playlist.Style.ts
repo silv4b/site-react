@@ -16,7 +16,7 @@ const PlaylistButton = styled.button`
     background-color: #f5f5f5;
   }
 
-  &:first-child{
+  &:first-child {
     width: 40px;
     height: 40px;
   }
@@ -27,4 +27,4 @@ const PlaylistButton = styled.button`
   }
 `;
 
-export {PlaylistButton};
+export { PlaylistButton };

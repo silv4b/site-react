@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const CenterElements  = styled.div`
+const CenterElements = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-const WraperFlex  = styled.div`
+const WraperFlex = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 420px;
@@ -17,4 +17,4 @@ const WraperFlex  = styled.div`
   }
 `;
 
-export {CenterElements, WraperFlex}
+export { CenterElements, WraperFlex };

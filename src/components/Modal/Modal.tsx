@@ -1,6 +1,12 @@
 import { useCallback, useEffect } from "react";
 import { spotifyPlaylists } from "../Playlist/SpotifyPlaylists";
-import { Background, ModalContent, PlaylistContainer, PlaylisImage, PlaylisDescription } from "./Modal.Style";
+import {
+  Background,
+  ModalContent,
+  PlaylistContainer,
+  PlaylisImage,
+  PlaylisDescription,
+} from "./Modal.Style";
 
 interface KeyboardEvent {
   key: string;
@@ -48,7 +54,10 @@ export default function Modal({ isOpen, setOpen, title }: Partial<IModal>) {
           {spotifyPlaylists.map((pl) => {
             return (
               <>
-                <PlaylistContainer onClick={() => window.open(pl.link, "_blank")} key={pl.id}>
+                <PlaylistContainer
+                  onClick={() => window.open(pl.link, "_blank")}
+                  key={pl.id}
+                >
                   <PlaylisImage src={pl.image} alt="" />
                   <PlaylisDescription>
                     <p>{pl.nome}</p>

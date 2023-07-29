@@ -5,4 +5,4 @@ interface ISpotify {
   title: string;
 }
 
-export type {ISpotify}
+export type { ISpotify };

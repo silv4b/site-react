@@ -12,7 +12,15 @@ export default function Main() {
       <CenterElements>
         <WraperFlex>
           {socialMedia.map((social) => {
-            return <Square key={social.id} link={social.link} icon={social.icon} color={color} hoverColor={hoverColor} />;
+            return (
+              <Square
+                key={social.id}
+                link={social.link}
+                icon={social.icon}
+                color={color}
+                hoverColor={hoverColor}
+              />
+            );
           })}
         </WraperFlex>
       </CenterElements>

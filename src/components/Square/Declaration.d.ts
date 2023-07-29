@@ -1,7 +1,7 @@
 // test.d.ts
 declare namespace JSX {
   interface IntrinsicElements {
-    'box-icon': unknown;
+    "box-icon": unknown;
   }
 }
 

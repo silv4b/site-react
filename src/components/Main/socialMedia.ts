@@ -32,7 +32,7 @@ const socialMedia = [
     id: 6,
     link: "mailto:brunoxbkd@gmail.com",
     icon: "gmail",
-  }
+  },
 ];
 
-export {socialMedia, color, hoverColor};
+export { socialMedia, color, hoverColor };

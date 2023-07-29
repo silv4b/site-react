@@ -9,7 +9,13 @@ interface ISquare {
   hoverColor: string;
 }
 
-export default function Square({ link, icon, animation, color, hoverColor }: Partial<ISquare>) {
+export default function Square({
+  link,
+  icon,
+  animation,
+  color,
+  hoverColor,
+}: Partial<ISquare>) {
   const [firstColor, setFirstColor] = useState(color);
 
   const onMouseOver = () => {
@@ -27,7 +33,13 @@ export default function Square({ link, icon, animation, color, hoverColor }: Par
         onMouseOver={() => onMouseOver()}
         onMouseLeave={() => onMouseLeave()}
       >
-        <box-icon id="boxIcon" type="logo" name={icon} animation={animation} color={firstColor} />
+        <box-icon
+          id="boxIcon"
+          type="logo"
+          name={icon}
+          animation={animation}
+          color={firstColor}
+        />
       </Container>
     </>
   );
